@@ -35,7 +35,7 @@
 	<div>
 		<h1>{text}</h1>
 		<form>
-			<input type="checkbox" name="inverse" id="inverse" on:change={check_inverse} />
+			<input type="checkbox" name="inverse" id="inverse" bind:checked={is_inverse} on:change={check_inverse} />
 			<label for="inverse">Check for the inverse</label>
 		</form>
 	</div>
