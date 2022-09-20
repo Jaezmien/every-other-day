@@ -15,6 +15,11 @@ export default defineConfig({
 				short_name: 'OtherDay',
 				description: 'Tells you whether its the other day.',
 				theme_color: '#1f2229',
+				background_color: '#1f2229',
+				orientation: 'portrait',
+				display: 'standalone',
+				scope: '/',
+				start_url: '/',
 				icons: [
 					{
 						src: 'pwa-192x192.png',
