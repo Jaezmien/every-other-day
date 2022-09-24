@@ -15,7 +15,6 @@
 		"vite-plugin-pwa": "^0.12.7"
 	},
 	"dependencies": {
-		"@fontsource/montserrat": "^4.5.12",
-		"dayjs": "^1.11.5"
+		"@fontsource/montserrat": "^4.5.12"
 	}
 }

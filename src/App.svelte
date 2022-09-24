@@ -1,5 +1,4 @@
 <script>
-	import dayjs from 'dayjs';
 	import { onMount } from 'svelte';
 
 	let is_inverse = false;
@@ -12,8 +11,7 @@
 	});
 
 	function update_state() {
-		const unix_seconds = dayjs().unix();
-		const current_day = Math.floor(unix_seconds / 60 / 24);
+		const current_day = Math.floor(Date.now() / 1000 / 60 / 60 / 24);
 		const other = current_day % 2 === (is_inverse ? 1 : 0);
 
 		text = other ? 'It is the other day!' : 'It is not the other day...';
